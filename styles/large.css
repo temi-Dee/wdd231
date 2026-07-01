@@ -1,0 +1,57 @@
+/* Desktop/Tablet styles - min-width: 640px */
+
+@media (min-width: 640px) {
+  /* Nav becomes horizontal; hamburger hidden */
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav .nav-list {
+    display: flex !important;
+    gap: 0.25rem;
+    margin: 0;
+  }
+
+  .nav-list a {
+    border-radius: 4px;
+    padding-inline: 0.9rem;
+  }
+
+  /* Grid layout for main content */
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "h1 h1"
+      "about photo"
+      "courses courses";
+    gap: 1rem;
+  }
+
+  h1 {
+    grid-area: h1;
+  }
+
+  .about {
+    grid-area: about;
+  }
+
+  .photo {
+    grid-area: photo;
+  }
+
+  .courses {
+    grid-area: courses;
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .course-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+

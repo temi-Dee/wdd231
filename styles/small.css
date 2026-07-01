@@ -1,0 +1,13 @@
+/* Mobile-first styles - default */
+
+/* Nav collapsed by default on small screens */
+.nav:not(.open) .nav-list {
+    display: none;
+}
+
+/* Prevent horizontal scroll */
+@media (max-width: 1200px) {
+    body {
+        overflow-x: hidden;
+    }
+}

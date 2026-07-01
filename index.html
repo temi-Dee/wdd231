@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Daniel Ayodele's WDD131 course home page showcasing web development projects and coursework.">
+    <meta name="author" content="Daniel Ayodele">
+    <title>Home - Daniel Ayodele</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS: normalize -> small -> main -> large -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JS: defer loading -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Daniel Ayodele Home">
+            <img src="images/site-logo.svg" alt="Logo" width="28" height="28">
+            <span class="site-name">Daniel Ayodele</span>
+        </a>
+
+        <!-- Hamburger (small screens) -->
+        <button id="menuToggle" class="menu-toggle" aria-label="Open menu" aria-controls="primaryNav"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <!-- Responsive navigation -->
+        <nav id="primaryNav" class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber/index.html">Chamber Project</a></li>
+                <li><a href="final/index.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="wrapper">
+        <h1>Home</h1>
+
+        <section class="card about">
+            <h2>About Me</h2>
+            <p>
+                Welcome! I'm building clean, responsive web pages with semantic HTML,
+                custom CSS, and vanilla JavaScript. This page demonstrates a
+                mobile-first layout, a hamburger menu on small screens, and dynamic
+                content rendering with simple array methods.
+            </p>
+        </section>
+
+        <section class="card photo">
+            <h2>Student Photo</h2>
+            <figure class="photo-frame">
+                <!-- Keep ≤125 kB; use WebP; lazy-load; never distort -->
+                <img src="images/student-photo.jpeg" alt="Portrait of Daniel Ayodele" width="480" height="480"
+                    loading="lazy">
+            </figure>
+        </section>
+
+        <section class="card courses">
+            <h2>Web Dev Courses</h2>
+
+            <!-- Filter buttons -->
+            <div class="filters" role="group" aria-label="Course filters">
+                <button id="filterAll" class="btn is-active">All</button>
+                <button id="filterCSE" class="btn">CSE</button>
+                <button id="filterWDD" class="btn">WDD</button>
+            </div>
+
+            <!-- Dynamic course cards -->
+            <div id="courseGrid" class="course-grid" aria-live="polite"></div>
+
+            <!-- Dynamic credit total (for the currently displayed set) -->
+            <p id="creditTotal" class="credit-total" aria-live="polite">
+                <!-- filled by JS -->
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-social">
+            <a class="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor"
+                        d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4zM8 8h3.8v2.05H11.9c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.6c0-1.58-.03-3.62-2.21-3.62-2.22 0-2.56 1.73-2.56 3.51V23H8z" />
+                </svg>
+            </a>
+            <a class="icon-link" href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub">
+                <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor"
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+            </a>
+            <a class="icon-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="X (Twitter)">
+                <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor"
+                        d="M17.5 2H21l-7 8.1L22.5 22H16l-5-6-5.6 6H2l7.6-8.3L1.5 2h6l4.6 5.6L17.5 2Z" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer-meta">
+            <p>
+                &copy; <span id="year"></span> &middot; Daniel Ayodele &middot; Nigeria
+                &middot; <span class="cuy">Check Your Understanding</span>
+            </p>
+        </div>
+
+        <p id="lastModified" class="last-modified"> </p>
+    </footer>
+</body>
+
+</html>
