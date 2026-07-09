@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagos Chamber of Commerce</title>
+    <meta name="description"
+        content="Lagos Chamber of Commerce promotes business growth, networking, and economic development across Lagos, Nigeria's commercial capital.">
+    <meta name="author" content="Daniel Ayodele">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lagos Chamber of Commerce – Supporting Business in Nigeria">
+    <meta property="og:description"
+        content="Join the Lagos Chamber of Commerce to grow your business, connect with top companies, and access exclusive networking events in Lagos, Nigeria.">
+    <meta property="og:image" content="https://temi-dee.github.io/wdd231/chamber/images/LCCI_LOGO.jpg">
+    <meta property="og:url" content="https://temi-dee.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="images/favicon.icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-brand">
+            <img src="images/lcci_logo.png" alt="Lagos Chamber of Commerce logo">
+            <h1>Lagos Chamber of Commerce</h1>
+        </div>
+        <button id="menuBtn">☰</button>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero">
+            <h2>Supporting Businesses in Lagos</h2>
+            <a class="cta" href="join.html">Join the Chamber</a>
+        </section>
+
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Business Networking Event - Oct 15</li>
+                <li>Lagos Trade Expo - Nov 5</li>
+                <li>Startup Pitch Competition - Nov 20</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather in Lagos</h2>
+            <div id="weather-current">
+                <p id="weather-temp">Loading...</p>
+                <p id="weather-desc"></p>
+            </div>
+            <div id="weather-forecast"></div>
+        </section>
+
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spotlights"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>📍 Lagos, Nigeria</p>
+        <p>Daniel Ayodele | WDD 231</p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+
+</body>
+
+</html>
