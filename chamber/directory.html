@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagos Chamber of Commerce Directory</title>
+    <meta name="description"
+        content="Discover member businesses in Lagos. View in grid or list format and connect with local companies through the official chamber directory.">
+    <meta name="author" content="Daniel Ayodele">
+
+    <!-- Facebook OG Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lagos Chamber Directory - Local Business Directory">
+    <meta property="og:description"
+        content="Browse Lagos Chamber member companies in grid or list view. Find addresses, phone numbers, websites and membership levels. Join the chamber today!">
+    <meta property="og:image" content="https://temi-dee.github.io/wdd231/chamber/images/LCCI_logo.jpg">
+    <meta property="og:url" content="https://temi-dee.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Lagos Chamber Directory</h1>
+        <button id="menuBtn" aria-label="Menu">☰</button>
+        <nav aria-label="Main navigation">
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Member Directory</h2>
+        <div class="view-toggle">
+            <button id="gridBtn" class="view-btn active" aria-pressed="true">Grid View</button>
+            <button id="listBtn" class="view-btn" aria-pressed="false">List View</button>
+        </div>
+
+        <section id="members" class="members-grid" aria-live="polite">
+            <p>Loading members...</p>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>📍 Lagos Chamber of Commerce, Lagos, Nigeria</p>
+        </address>
+        <p>Daniel Ayodele | WDD 231</p>
+        <p>&copy; <span id="year"></span> Lagos Chamber of Commerce</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

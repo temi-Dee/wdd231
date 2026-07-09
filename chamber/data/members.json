@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Lagos Tech Hub",
+    "address": "Victoria Island",
+    "phone": "+2348012345678",
+    "website": "https://lagostechhub.com",
+    "image": "techhub.jpeg",
+    "level": 2
+  },
+  {
+    "name": "Naija Foods Ltd",
+    "address": "Lekki",
+    "phone": "+2348022222222",
+    "website": "https://naijafoods.com",
+    "image": "naijafood.jpeg",
+    "level": 1
+  },
+  {
+    "name": "Ocean View Hotel",
+    "address": "Lekki Beach",
+    "phone": "+2348033333333",
+    "website": "https://oceanviewhotel.com",
+    "image": "lagos1.jpeg",
+    "level": 3
+  },
+  {
+    "name": "Smart Finance Group",
+    "address": "Ikeja",
+    "phone": "+2348044444444",
+    "website": "https://smartfinance.ng",
+    "image": "lagos2.jpeg",
+    "level": 1
+  },
+  {
+    "name": "Green Energy Nigeria",
+    "address": "Surulere",
+    "phone": "+2348055555555",
+    "website": "https://greenenergy.ng",
+    "image": "energy.jpeg",
+    "level": 2
+  },
+  {
+    "name": "City Logistics",
+    "address": "Apapa",
+    "phone": "+2348066666666",
+    "website": "https://citylogistics.com",
+    "image": "lagos3.jpeg",
+    "level": 3
+  },
+  {
+    "name": "Lagos Fashion House",
+    "address": "Yaba",
+    "phone": "+2348077777777",
+    "website": "https://lagosfashionhouse.com",
+    "image": "lagos4.jpeg",
+    "level": 1
+  }
+]

@@ -1,0 +1,141 @@
+/* LARGER SCREEN STYLES - min-width 1024px and up */
+
+@media (min-width: 1024px) {
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .home-main {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .home-main .hero {
+        grid-column: 1 / -1;
+        min-height: 360px;
+        padding: 4rem 2rem;
+    }
+
+    .home-main .events { grid-column: 1 / 2; }
+    .home-main .weather { grid-column: 2 / 3; }
+    .home-main .spotlights { grid-column: 1 / -1; }
+
+    /* Join page - form and cards side by side */
+    .join-main {
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .join-form-section {
+        flex: 1 1 55%;
+    }
+
+    .membership-cards-section {
+        flex: 1 1 40%;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #spotlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cta {
+        font-size: 1.2rem;
+        padding: 1rem 2.5rem;
+    }
+
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ── Discover Page – CSS grid-area classes for all screen sizes ─────────────── */
+.place-card--1 { grid-area: place1; }
+.place-card--2 { grid-area: place2; }
+.place-card--3 { grid-area: place3; }
+.place-card--4 { grid-area: place4; }
+.place-card--5 { grid-area: place5; }
+.place-card--6 { grid-area: place6; }
+.place-card--7 { grid-area: place7; }
+.place-card--8 { grid-area: place8; }
+
+/* ── Discover Page – Medium screens (641px–1024px) ─────────────────────────── */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .places-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "place1 place2"
+            "place3 place3"
+            "place4 place5"
+            "place6 place6"
+            "place7 place8";
+    }
+
+    /* Hover effect on images — medium and up only */
+    .place-card figure img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .place-card figure img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1) saturate(1.2);
+    }
+}
+
+/* ── Discover Page – Large screens (1025px+) ────────────────────────────────── */
+@media (min-width: 1025px) {
+    .discover-main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1.5rem 2rem;
+    }
+
+    .discover-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .discover-stats li {
+        flex: 1 1 200px;
+    }
+
+    .places-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "place1 place2 place3"
+            "place4 place4 place5"
+            "place6 place7 place8";
+    }
+
+    /* Hover effect on images — large screens */
+    .place-card figure img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .place-card figure img:hover {
+        transform: scale(1.06);
+        filter: brightness(1.12) saturate(1.25);
+    }
+}
+
+/* DEBUG: Responsive breakpoints verified at 320px, 768px, 1024px */
+/* All bugs fixed: Images 404 ok (add JPGs), toggle no-img list, levels styled */
