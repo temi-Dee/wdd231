@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join the Chamber | Lagos Chamber of Commerce</title>
-    <meta name="description" content="Apply for membership at the Lagos Chamber of Commerce. Choose from NP, Bronze, Silver, or Gold membership levels and grow your business in Lagos, Nigeria.">
+    <meta name="description"
+        content="Apply for membership at the Lagos Chamber of Commerce. Choose from NP, Bronze, Silver, or Gold membership levels and grow your business in Lagos, Nigeria.">
     <meta name="author" content="Daniel Ayodele">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Join the Lagos Chamber of Commerce Today">
-    <meta property="og:description" content="Become a member of the Lagos Chamber of Commerce and unlock networking, training, and advertising benefits for your business.">
+    <meta property="og:description"
+        content="Become a member of the Lagos Chamber of Commerce and unlock networking, training, and advertising benefits for your business.">
     <meta property="og:image" content="https://temi-dee.github.io/wdd231/chamber/images/lcci_logo.png">
     <meta property="og:url" content="https://temi-dee.github.io/wdd231/chamber/join.html">
 
@@ -31,7 +33,7 @@
     <header>
         <div class="header-brand">
             <img src="images/lcci_logo.png" alt="Lagos Chamber of Commerce logo">
-            <h1>Lagos Chamber of Commerce</h1>
+            <h2>Lagos Chamber of Commerce</h2>
         </div>
         <button id="menuBtn">☰</button>
         <nav>
@@ -46,6 +48,8 @@
 
     <main class="join-main">
 
+        <h1>Join the Chamber</h1>
+
         <!-- Membership Application Form -->
         <section class="join-form-section">
             <h2>Membership Application</h2>
@@ -53,52 +57,40 @@
 
                 <label for="firstName">
                     First Name
-                    <input type="text" id="firstName" name="firstName"
-                        title="Enter your first name"
-                        autocomplete="given-name"
-                        required>
+                    <input type="text" id="firstName" name="firstName" title="Enter your first name"
+                        autocomplete="given-name" required>
                 </label>
 
                 <label for="lastName">
                     Last Name
-                    <input type="text" id="lastName" name="lastName"
-                        title="Enter your last name"
-                        autocomplete="family-name"
-                        required>
+                    <input type="text" id="lastName" name="lastName" title="Enter your last name"
+                        autocomplete="family-name" required>
                 </label>
 
                 <label for="orgTitle">
                     Organizational Title
                     <input type="text" id="orgTitle" name="orgTitle"
                         title="Enter your title within your organization (letters, hyphens, spaces, min 7 characters)"
-                        autocomplete="organization-title"
-                        pattern="[A-Za-z\- ]{7,}"
+                        autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}"
                         placeholder="e.g. Managing Director">
                 </label>
 
                 <label for="email">
                     Email Address
-                    <input type="email" id="email" name="email"
-                        title="Enter a valid email address"
-                        autocomplete="email"
-                        placeholder="e.g. name@company.com"
-                        required>
+                    <input type="email" id="email" name="email" title="Enter a valid email address" autocomplete="email"
+                        placeholder="e.g. name@company.com" required>
                 </label>
 
                 <label for="phone">
                     Mobile Phone Number
-                    <input type="tel" id="phone" name="phone"
-                        title="Enter your mobile phone number"
-                        autocomplete="tel"
+                    <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel"
                         required>
                 </label>
 
                 <label for="orgName">
                     Business / Organization Name
-                    <input type="text" id="orgName" name="orgName"
-                        title="Enter your business or organization name"
-                        autocomplete="organization"
-                        required>
+                    <input type="text" id="orgName" name="orgName" title="Enter your business or organization name"
+                        autocomplete="organization" required>
                 </label>
 
                 <label for="membershipLevel">
@@ -114,10 +106,8 @@
 
                 <label for="description">
                     Business Description
-                    <textarea id="description" name="description"
-                        title="Briefly describe your business or organization"
-                        rows="4"
-                        placeholder="Tell us about your business..."></textarea>
+                    <textarea id="description" name="description" title="Briefly describe your business or organization"
+                        rows="4" placeholder="Tell us about your business..."></textarea>
                 </label>
 
                 <!-- Hidden timestamp field -->
