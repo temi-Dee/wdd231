@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#c0392b"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12"/>
+      <stop offset="100%" style="stop-color:#e67e22"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="200" fill="rgba(243,156,18,0.05)"/>
+  <circle cx="1100" cy="500" r="250" fill="rgba(243,156,18,0.05)"/>
+  <circle cx="600" cy="315" r="300" fill="rgba(255,255,255,0.03)"/>
+  <!-- Food icons row -->
+  <text x="180" y="200" font-size="60">🍛</text>
+  <text x="400" y="200" font-size="60">🍲</text>
+  <text x="620" y="200" font-size="60">🥘</text>
+  <text x="840" y="200" font-size="60">🍗</text>
+  <text x="1020" y="200" font-size="60">🥤</text>
+  <!-- Title -->
+  <text x="600" y="330" font-family="Poppins, Arial, sans-serif" font-size="72" font-weight="700" fill="#f39c12" text-anchor="middle" letter-spacing="2">NaijaEats</text>
+  <!-- Tagline -->
+  <text x="600" y="400" font-family="Open Sans, Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.9)" text-anchor="middle" letter-spacing="1">Authentic Nigerian Food in Lagos</text>
+  <!-- Divider -->
+  <line x1="400" y1="440" x2="800" y2="440" stroke="#f39c12" stroke-width="3" opacity="0.6"/>
+  <!-- Bottom tag -->
+  <text x="600" y="500" font-family="Open Sans, Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.6)" text-anchor="middle">Jollof • Suya • Egusi • Pounded Yam</text>
+  <!-- Footer -->
+  <text x="600" y="570" font-family="Open Sans, Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.4)" text-anchor="middle">naijaeats.ng</text>
+</svg>
+

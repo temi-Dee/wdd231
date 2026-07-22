@@ -35,8 +35,8 @@ function renderDishes(dishes) {
                     <span class="dish-price">₦${dish.price.toLocaleString()}</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-order" data-id="${dish.id}" data-name="${dish.name}" data-price="${dish.price}">Order</button>
-                    <button class="btn-details" data-id="${dish.id}">Details</button>
+                    <button class="order-btn" data-id="${dish.id}" data-name="${dish.name}" data-price="${dish.price}">Order</button>
+                    <button class="detail-btn" data-id="${dish.id}">Details</button>
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@ function openModal(dish) {
             <li><strong>Calories:</strong> ${dish.calories} kcal</li>
             <li><strong>Prep Time:</strong> ${dish.prepTime}</li>
         </ul>
-        <a href="contact.html?dish=${encodeURIComponent(dish.name)}" class="btn-primary">Order This Dish</a>
+        <a href="contact.html?dish=${encodeURIComponent(dish.name)}" class="btn-gold">Order This Dish</a>
     `;
     modal.showModal();
 }
@@ -93,14 +93,14 @@ if (modal) modal.addEventListener('click', e => { if (e.target === modal) modal.
 
 // ── Card events ───────────────────────────────────────────────────────────────
 function attachMenuEvents() {
-    document.querySelectorAll('.btn-details').forEach(btn => {
+    document.querySelectorAll('.detail-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             const dish = allDishes.find(d => d.id === Number(btn.dataset.id));
             openModal(dish);
         });
     });
 
-    document.querySelectorAll('.btn-order').forEach(btn => {
+    document.querySelectorAll('.order-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             const cart = JSON.parse(localStorage.getItem('naijaeats-cart') || '[]');
             cart.push({ id: btn.dataset.id, name: btn.dataset.name, price: btn.dataset.price });

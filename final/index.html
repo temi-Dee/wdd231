@@ -1,168 +1,151 @@
 <!doctype html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NaijaEats – Authentic Nigerian Food in Lagos</title>
-    <meta
-      name="description"
-      content="Discover and order authentic Nigerian dishes from the best restaurants in Lagos. Jollof rice, suya, egusi soup, and more delivered to your door."
-    />
-    <meta name="author" content="Daniel Ayodele" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="NaijaEats – Authentic Nigerian Food in Lagos"
-    />
-    <meta
-      property="og:description"
-      content="Order authentic Nigerian dishes online. The best jollof rice, suya, egusi soup, and more from top Lagos restaurants."
-    />
-    <meta
-      property="og:image"
-      content="https://temi-dee.github.io/wdd231/final/images/og-image.webp"
-    />
-    <meta
-      property="og:url"
-      content="https://temi-dee.github.io/wdd231/final/index.html"
-    />
-    <link rel="icon" href="images/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
-    <script type="module" src="scripts/home.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <div class="header-brand">
-        <a href="index.html" class="logo-link">
-          <span class="logo-text">🍛 NaijaEats</span>
-        </a>
-      </div>
-      <div class="header-actions">
-        <button id="themeToggle" class="btn-icon" aria-label="Toggle theme">
-          🌙 Dark Mode
-        </button>
-        <span class="cart-badge">🛒 <span id="cart-count">0</span></span>
-      </div>
-      <button id="menuBtn" aria-label="Open menu" aria-expanded="false">
-        ☰
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NaijaEats – Authentic Nigerian Food in Lagos</title>
+  <meta name="description"
+    content="Discover and order authentic Nigerian dishes from the best restaurants in Lagos. Jollof rice, suya, egusi soup, and more delivered to your door." />
+  <meta name="author" content="Daniel Ayodele" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NaijaEats – Authentic Nigerian Food in Lagos" />
+  <meta property="og:description"
+    content="Order authentic Nigerian dishes online. The best jollof rice, suya, egusi soup, and more from top Lagos restaurants." />
+  <meta property="og:image" content="https://temi-dee.github.io/wdd231/final/images/og-image.svg" />
+  <meta property="og:url" content="https://temi-dee.github.io/wdd231/final/index.html" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <script type="module" src="scripts/home.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-brand">
+      <a href="index.html" class="logo-link">
+        <span class="logo-text">🍛 NaijaEats</span>
+      </a>
+    </div>
+    <div class="header-actions">
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+        🌙 Dark Mode
       </button>
-      <nav>
-        <ul id="navMenu">
+      <span class="cart-badge">🛒 <span id="cart-count">0</span></span>
+    </div>
+    <button id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      ☰
+    </button>
+    <nav>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Taste the Soul of Nigeria</h1>
+        <p>
+          Order authentic Lagos dishes — from smoky jollof rice to spiced suya
+          — delivered fresh to your door.
+        </p>
+        <div class="hero-btns">
+          <a href="menu.html" class="btn-gold">Browse Menu</a>
+          <a href="contact.html" class="btn-outline">Place an Order</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="featured-section">
+      <h2>Featured Dishes</h2>
+      <p class="section-sub">Hand-picked favourites from our Lagos kitchen</p>
+      <div id="featured-grid" class="dish-grid">
+        <p class="loading">Loading dishes...</p>
+      </div>
+    </section>
+
+    <!-- Why NaijaEats -->
+    <section class="why-section">
+      <h2>Why NaijaEats?</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-icon">🍲</span>
+          <h3>Authentic Recipes</h3>
+          <p>
+            Every dish is prepared using traditional Nigerian recipes passed
+            down through generations.
+          </p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">🚀</span>
+          <h3>Fast Delivery</h3>
+          <p>
+            We deliver across Lagos Island, Victoria Island, Lekki, and Ikeja
+            within 45 minutes.
+          </p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">🌿</span>
+          <h3>Fresh Ingredients</h3>
+          <p>
+            We source fresh, locally grown ingredients daily from Lagos
+            markets.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dish Detail Modal -->
+  <dialog id="dish-modal" aria-labelledby="modal-title">
+    <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+    <div id="modal-body"></div>
+  </dialog>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">🍛 NaijaEats</p>
+        <p>Authentic Nigerian cuisine delivered across Lagos.</p>
+      </div>
+      <div>
+        <p><strong>Quick Links</strong></p>
+        <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="contact.html">Order</a></li>
+          <li><a href="attributions.html">Attributions</a></li>
         </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!-- Hero -->
-      <section class="hero">
-        <div class="hero-content">
-          <h1>Taste the Soul of Nigeria</h1>
-          <p>
-            Order authentic Lagos dishes — from smoky jollof rice to spiced suya
-            — delivered fresh to your door.
-          </p>
-          <div class="hero-btns">
-            <a href="menu.html" class="btn-primary">Browse Menu</a>
-            <a href="contact.html" class="btn-secondary">Place an Order</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Featured Dishes -->
-      <section class="featured-section">
-        <h2>Featured Dishes</h2>
-        <p class="section-sub">Hand-picked favourites from our Lagos kitchen</p>
-        <div id="featured-grid" class="dish-grid">
-          <p class="loading">Loading dishes...</p>
-        </div>
-      </section>
-
-      <!-- Why NaijaEats -->
-      <section class="why-section">
-        <h2>Why NaijaEats?</h2>
-        <div class="why-grid">
-          <div class="why-card">
-            <span class="why-icon">🍲</span>
-            <h3>Authentic Recipes</h3>
-            <p>
-              Every dish is prepared using traditional Nigerian recipes passed
-              down through generations.
-            </p>
-          </div>
-          <div class="why-card">
-            <span class="why-icon">🚀</span>
-            <h3>Fast Delivery</h3>
-            <p>
-              We deliver across Lagos Island, Victoria Island, Lekki, and Ikeja
-              within 45 minutes.
-            </p>
-          </div>
-          <div class="why-card">
-            <span class="why-icon">🌿</span>
-            <h3>Fresh Ingredients</h3>
-            <p>
-              We source fresh, locally grown ingredients daily from Lagos
-              markets.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Dish Detail Modal -->
-    <dialog id="dish-modal" aria-labelledby="modal-title">
-      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
-      <div id="modal-body"></div>
-    </dialog>
-
-    <footer>
-      <div class="footer-grid">
-        <div>
-          <p class="footer-brand">🍛 NaijaEats</p>
-          <p>Authentic Nigerian cuisine delivered across Lagos.</p>
-        </div>
-        <div>
-          <p><strong>Quick Links</strong></p>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Order</a></li>
-            <li><a href="attributions.html">Attributions</a></li>
-          </ul>
-        </div>
-        <div>
-          <p><strong>Contact</strong></p>
-          <p>📍 Victoria Island, Lagos</p>
-          <p>📞 +234 801 234 5678</p>
-          <p>✉️ hello@naijaeats.ng</p>
-        </div>
       </div>
-      <div class="footer-bottom">
-        <p>
-          &copy; <span id="year"></span> NaijaEats &mdash; Daniel Ayodele | WDD
-          231
-        </p>
-        <p>Last Modified: <span id="lastModified"></span></p>
-        <p>
-          <a
-            href="https://youtu.be/your-video-id"
-            target="_blank"
-            rel="noopener noreferrer"
-            >📹 Project Demo Video</a
-          >
-        </p>
+      <div>
+        <p><strong>Contact</strong></p>
+        <p>📍 Victoria Island, Lagos</p>
+        <p>📞 +234 801 234 5678</p>
+        <p>✉️ hello@naijaeats.ng</p>
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        &copy; <span id="year"></span> NaijaEats &mdash; Daniel Ayodele | WDD
+        231
+      </p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+      <p>
+        <a href="https://youtu.be/your-video-id" target="_blank" rel="noopener noreferrer">📹 Project Demo Video</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
