@@ -1,0 +1,66 @@
+/* NaijaEats – larger.css (768px and above) */
+
+@media (min-width: 768px) {
+
+    /* Nav */
+    #menuBtn { display: none; }
+
+    nav ul {
+        display: flex !important;
+        gap: 1.5rem;
+        width: auto;
+        padding: 0;
+    }
+
+    nav ul li a {
+        border-bottom: none;
+        padding: 0;
+        font-size: 0.95rem;
+    }
+
+    nav ul li a:hover { color: var(--gold); }
+
+    header {
+        flex-wrap: nowrap;
+        padding: 0.75rem 2rem;
+    }
+
+    /* Hero */
+    .hero { padding: 5rem 2rem; }
+    .hero h1 { font-size: 2.8rem; }
+    .hero-btns { flex-direction: row; justify-content: center; }
+
+    /* Dish grid — 2 columns */
+    .dish-grid { grid-template-columns: repeat(2, 1fr); }
+
+    /* Why grid — 3 columns */
+    .why-grid { grid-template-columns: repeat(3, 1fr); }
+
+    /* Footer grid */
+    .footer-grid { grid-template-columns: repeat(3, 1fr); }
+    .footer-bottom { flex-direction: row; justify-content: space-between; }
+}
+
+@media (min-width: 1024px) {
+
+    /* Dish grid — 3 columns */
+    .dish-grid { grid-template-columns: repeat(3, 1fr); }
+
+    /* Main content max width */
+    main { max-width: 1200px; margin: 0 auto; }
+
+    .featured-section,
+    .why-section,
+    .menu-section,
+    .contact-section {
+        padding: 3rem 2rem;
+    }
+
+    /* Contact page — form centered with max width */
+    .contact-main { padding: 0; }
+    .contact-section { max-width: 700px; margin: 0 auto; }
+
+    /* Hero larger */
+    .hero { padding: 6rem 2rem; }
+    .hero h1 { font-size: 3.2rem; }
+}

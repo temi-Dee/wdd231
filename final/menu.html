@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu – NaijaEats | Nigerian Food Lagos</title>
+    <meta name="description" content="Browse the full NaijaEats menu. Explore authentic Nigerian dishes including jollof rice, egusi soup, suya, pounded yam, and more. Order online today.">
+    <meta name="author" content="Daniel Ayodele">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Menu – NaijaEats | Nigerian Food Lagos">
+    <meta property="og:description" content="Browse our full menu of authentic Nigerian dishes. Filter by category and order your favourites online.">
+    <meta property="og:image" content="https://temi-dee.github.io/wdd231/final/images/og-image.webp">
+    <meta property="og:url" content="https://temi-dee.github.io/wdd231/final/menu.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/menu.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-brand">
+            <a href="index.html" class="logo-link">
+                <span class="logo-text">🍛 NaijaEats</span>
+            </a>
+        </div>
+        <div class="header-actions">
+            <button id="themeToggle" class="btn-icon" aria-label="Toggle theme">🌙 Dark Mode</button>
+        </div>
+        <button id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="menu-main">
+        <section class="menu-hero">
+            <h1>Our Menu</h1>
+            <p>16 authentic Nigerian dishes — filter by category and order your favourites</p>
+        </section>
+
+        <section class="menu-section">
+            <div id="filter-bar" class="filter-bar" role="group" aria-label="Filter by category"></div>
+            <div id="menu-grid" class="dish-grid">
+                <p class="loading">Loading menu...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Dish Detail Modal -->
+    <dialog id="dish-modal" aria-labelledby="modal-title">
+        <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+        <div id="modal-body"></div>
+    </dialog>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <p class="footer-brand">🍛 NaijaEats</p>
+                <p>Authentic Nigerian cuisine delivered across Lagos.</p>
+            </div>
+            <div>
+                <p><strong>Quick Links</strong></p>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Order</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+            <div>
+                <p><strong>Contact</strong></p>
+                <p>📍 Victoria Island, Lagos</p>
+                <p>📞 +234 801 234 5678</p>
+                <p>✉️ hello@naijaeats.ng</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> NaijaEats &mdash; Daniel Ayodele | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p><a href="https://youtu.be/your-video-id" target="_blank" rel="noopener noreferrer">📹 Project Demo Video</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
