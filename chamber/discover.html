@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | Lagos Chamber of Commerce</title>
+    <meta name="description" content="Discover the best places to visit in Lagos, Nigeria. Explore landmarks, culture, beaches, markets, and more in Africa's most vibrant city.">
+    <meta name="author" content="Daniel Ayodele">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Discover Lagos – Top Places to Visit in Nigeria's Commercial Capital">
+    <meta property="og:description" content="Explore Lagos landmarks, beaches, markets, and cultural sites. Your guide to the best of Lagos, Nigeria.">
+    <meta property="og:image" content="https://temi-dee.github.io/wdd231/chamber/images/lcci_logo.png">
+    <meta property="og:url" content="https://temi-dee.github.io/wdd231/chamber/discover.html">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-brand">
+            <img src="images/lcci_logo.png" alt="Lagos Chamber of Commerce logo">
+            <h1>Lagos Chamber of Commerce</h1>
+        </div>
+        <button id="menuBtn">☰</button>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" aria-current="page">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover-main">
+
+        <!-- Visitor message -->
+        <div class="visitor-msg-bar">
+            <p id="visitor-msg"></p>
+        </div>
+
+        <!-- Intro -->
+        <section class="discover-intro">
+            <h2>Discover Lagos</h2>
+            <p>Lagos is Nigeria's largest city and the economic powerhouse of West Africa. With a population of over 15 million, it is a city of contrasts — from gleaming skyscrapers on Victoria Island to vibrant street markets on Lagos Island. Explore 8 must-see places below.</p>
+            <ul class="discover-stats">
+                <li><strong>Population:</strong> 15+ million</li>
+                <li><strong>Area:</strong> 1,171 km²</li>
+                <li><strong>Major Industries:</strong> Finance, Technology, Oil &amp; Gas, Trade, Entertainment</li>
+                <li><strong>Founded:</strong> 1472 (Portuguese contact), Nigerian capital until 1991</li>
+            </ul>
+        </section>
+
+        <!-- Places grid — cards injected by discover.js -->
+        <section class="discover-section">
+            <h2>Places of Interest</h2>
+            <div id="places-grid" class="places-grid"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>📍 Lagos, Nigeria</p>
+        <p>Daniel Ayodele | WDD 231</p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
